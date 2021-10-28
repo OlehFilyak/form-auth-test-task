@@ -1,0 +1,240 @@
+@import "normalize.css";
+
+:root {
+  --main-font:
+    'Roboto',
+    'Helvetica Neue',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  --accent-color: #1976D2;
+  --primary-color: #e2d7db;
+  --main-font-color: #202124;
+  --secondary-font-color: rgba(32, 33, 36, 0.7);
+  --third-font-color: #fff;
+  --border-form-color: rgba(154, 157, 161, 0.33);
+  --border-radius: 4px;
+  --box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25), 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  --box-shadow-accent: 0 0 4px 0 rgba(25, 118, 210, 0.15),
+    0 0 8px 0 rgba(25, 118, 210, 0.15);
+  --form-background-color: rgba(227, 228, 229, 0.09);
+  --input-border-color: rgba(0, 0, 0, 0.2);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.PageContainer {
+  width: 775px;
+  height: 661px;
+  margin: 0 auto;
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--border-form-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--form-background-color);
+
+}
+
+.SignUpMainCaption,
+.SignUpCaptionParagraph {
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.33;
+  color: var(--main-font-color);
+}
+
+.SignUpMainCaption>span {
+  color: var(--accent-color);
+}
+
+.SignUpMainCaption {
+  margin-bottom: 10px;
+
+  letter-spacing: 0.1em;
+}
+
+.SignUpCaptionParagraph {
+  margin-bottom: 20px;
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.SignUpCaptionParagraph {
+  font-size: 24px;
+}
+
+.Name,
+.Surname,
+.Email,
+.Password,
+.ConfirmPassword {
+  width: 177px;
+  height: 36px;
+
+  border: 2px solid var(--border-form-color);
+  border-radius: var(--border-radius);
+}
+
+.Email {
+  width: 362px;
+}
+
+.Name,
+.Password {
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.Email {
+  margin-bottom: 6px;
+}
+
+.SubscriptionForm {
+  margin-left: 6px;
+  margin-bottom: 10px;
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--secondary-font-color);
+}
+
+.PoliticsContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.confirmPolitic {
+  margin-left: 6px;
+  margin-right: 9px;
+}
+
+.infoAboutPolitic {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.33;
+
+  color: var(--secondary-font-color);
+
+}
+
+.BtnsContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.LogIn {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.33;
+
+  color: var(--accent-color);
+  margin-right: 95px;
+}
+
+.RegistrationBtnSubmit {
+  padding: 8px 22px;
+
+  background: var(--accent-color);
+
+  box-shadow: var(--box-shadow-accent);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--third-font-color);
+}
+
+.Disabled {
+  background: var(--primary-color);
+}
+
+.ImgContainer {
+  width: 350px;
+  text-align: center;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.78;
+
+  text-align: center;
+
+  /* Paragraph and TextInForm color */
+
+  color: rgba(32, 33, 36, 0.7);
+}
+
+.FormField {
+  padding: 0 10px;
+}
+
+.WarningMessage {
+  color: red
+}
